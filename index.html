@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bebidas Hidratantes | Energía Natural</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    line-height:1.6;
+    color:#333;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,0.7);
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+nav h2{
+    color:#fff;
+    font-weight:600;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:400;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00d4b1;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1562059390-a761a0847684?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:0 5%;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:15px;
+    animation:fadeIn 1.5s ease-in-out;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#00d4b1;
+    padding:12px 25px;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#00b89c;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 5%;
+    text-align:center;
+}
+
+section h2{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0 10px;
+}
+
+.card p{
+    padding:0 20px 20px;
+    font-size:0.95rem;
+}
+
+/* CTA */
+.cta{
+    background:#00d4b1;
+    color:#fff;
+    padding:80px 5%;
+}
+
+/* FORM */
+form{
+    margin-top:30px;
+}
+
+input{
+    padding:12px;
+    width:250px;
+    border-radius:25px;
+    border:none;
+    outline:none;
+    margin-right:10px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:25px;
+    background:#264653;
+    color:#fff;
+    cursor:pointer;
+    font-weight:600;
+}
+
+button:hover{
+    background:#1b2f38;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>HydraLife</h2>
+    <div>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hidrátate Inteligentemente</h1>
+        <p>Bebidas naturales con electrolitos y energía saludable para tu día.</p>
+        <a href="#productos" class="btn">Ver Productos</a>
+    </div>
+</section>
+
+<section id="beneficios">
+    <h2>¿Por qué elegir nuestras bebidas?</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1510627498534-cf7e9002facc?auto=format&fit=crop&w=1200&q=80">
+            <h3>Ingredientes Naturales</h3>
+            <p>Frutas frescas y sin azúcares añadidos.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505575967458-6bdb6f7f18bb?auto=format&fit=crop&w=1200&q=80">
+            <h3>Recarga de Electrolitos</h3>
+            <p>Ideal para deportistas y personas activas.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571003121915-cbb859a53f28?auto=format&fit=crop&w=1200&q=80">
+            <h3>Sabores Refrescantes</h3>
+            <p>Mango, limón, coco y más.</p>
+        </div>
+    </div>
+</section>
+
+<section id="productos">
+    <h2>Nuestros Productos</h2>
+    <p>Descubre la nueva generación de bebidas hidratantes saludables.</p>
+</section>
+
+<section class="cta" id="contacto">
+    <h2>Recibe Descuentos Exclusivos</h2>
+    <p>Suscríbete y recibe promociones especiales.</p>
+
+    <form onsubmit="return validarFormulario()">
+        <input type="email" id="email" placeholder="Ingresa tu correo" required>
+        <button type="submit">Suscribirme</button>
+    </form>
+
+    <p id="mensaje" style="margin-top:20px;"></p>
+</section>
+
+<footer>
+    © 2026 HydraLife | Todos los derechos reservados
+</footer>
+
+<script>
+function validarFormulario(){
+    const email = document.getElementById("email").value;
+    const mensaje = document.getElementById("mensaje");
+
+    if(email.includes("@") && email.includes(".")){
+        mensaje.style.color="white";
+        mensaje.innerHTML="¡Gracias por suscribirte! 🎉";
+        return false;
+    } else {
+        mensaje.style.color="yellow";
+        mensaje.innerHTML="Por favor ingresa un correo válido.";
+        return false;
+    }
+}
+</script>
+
+</body>
+</html>
